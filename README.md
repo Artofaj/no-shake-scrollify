@@ -1,1 +1,9 @@
 no-shake-scrollify
+
+Define waiting time in ms with var throttleTime.
+
+Define the elements to scroll to with var scrollToElement.
+
+Define the element's parent with var containerElement.
+
+For best results, apply position:relative to the container.
