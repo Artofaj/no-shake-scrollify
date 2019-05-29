@@ -1,6 +1,6 @@
 var thisWindow = document.getElementById(containerElement);
 var current = 0;
-var numberOf = (document.getElementById(containerElement).getElementsByClassName("child").length);
+var numberOf = (document.getElementById(containerElement).getElementsByClassName(scrollToElement).length);
 var selectorOf = document.getElementsByClassName(scrollToElement);
 var direction = +1;
 
