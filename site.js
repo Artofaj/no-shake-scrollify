@@ -23,10 +23,7 @@ function throttle(wait) {
 
 function scroll(element,number) {
   if (number < numberOf && number > -1 ){
-    thisWindow.scrollTo({
-      'left': 0,
-      'top': element[number].offsetTop
-    });
+    thisWindow.scrollTo(0, element[number].offsetTop);
     current = number;
     time = Date.now();
   }
@@ -34,7 +31,7 @@ function scroll(element,number) {
 
 document.addEventListener('wheel', preventDefault, {passive: false});
 
-window.addEventListener('wheel',
+document.addEventListener('wheel',
 function(e) {
   if (e.deltaY < 0) {
     direction = -1;
@@ -42,5 +39,6 @@ function(e) {
   if (e.deltaY > 0) {
     direction = +1;
   }
-})
-window.addEventListener('wheel', throttle(throttleTime))
+});
+
+document.addEventListener('wheel', throttle(throttleTime));

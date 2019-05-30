@@ -6,5 +6,4 @@ Define the elements to scroll to with `var scrollToElement = yourElement`.
 
 Define the element's parent with `var containerElement = yourContainer`.
 
-For best results, apply `position:relative` to the yourContainer.
-The container *needs* `overflow-y: hidden;`
+The container *needs* `overflow-y: hidden;` and `position:relative`.
